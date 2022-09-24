@@ -62,15 +62,19 @@ namespace net.EthanTFH.BTSGameJam
                 if(PlayerController.LocalPlayerInstance == null)
                 {
                     Debug.LogFormat("Making a new LocalPlayer for {0}", SceneManagerHelper.ActiveSceneName);
-                    
+
                     if (GameObject.Find("Floor"))
-                        PhotonNetwork.Instantiate(this.playerPrefabBig.name, new Vector3(0f, GameObject.Find("Floor").transform.position.y + 5, 0f), Quaternion.identity, 0);
+                    {
+                        PhotonNetwork.Instantiate(this.playerPrefabBig.name, new Vector3(0f, GameObject.Find("Floor").transform.position.y + 8, 0f), Quaternion.identity, 0);
+                    }
+                    else
+                        PhotonNetwork.Instantiate(this.playerPrefabBig.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+
                     if (PhotonNetwork.CurrentRoom.PlayerCount == 2) 
                     {
                         Debug.Log("Player Count 2");
                     }
-                    else
-                        PhotonNetwork.Instantiate(this.playerPrefabBig.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+                   
 
                 }
                 else
