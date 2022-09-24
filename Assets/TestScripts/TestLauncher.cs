@@ -11,13 +11,13 @@ namespace net.EthanTFH.BTSGameJam {
         #region Private Serializable Fields
 
         [field:SerializeField, Tooltip("The maximum number of players per room."), Header("Room Settings")]
-            private byte maxPlayersPerRoom = 4;
+            private byte maxPlayersPerRoom = 2;
         [field: SerializeField, Tooltip("The control panel for the lanucher."), Header("Menu Settings")]
             private GameObject controlPanel;
         [field: SerializeField, Tooltip("The progress label.")]
             private GameObject progressLabel;
         [field: Tooltip("The Game Version. (IMPORTANT)")]
-            string gameVersion = "1.5";
+            string gameVersion = "1.6";
 
         #endregion
 
