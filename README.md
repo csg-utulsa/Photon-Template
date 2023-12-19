@@ -25,6 +25,7 @@ To set up a project with Photon cloud servers:
 ![PUN Wizard](https://github.com/csg-utulsa/Photon-Template/blob/main/doc-imgs/phonton-06.png)
  
 7.	Your photon server settings should now be setup
+
 ![Appd Applied](https://github.com/csg-utulsa/Photon-Template/blob/main/doc-imgs/phonton-07.png)
  
 Photon Getting Started Link - [https://doc.photonengine.com/en-us/pun/v2/getting-started/pun-intro](https://doc.photonengine.com/en-us/pun/v2/getting-started/pun-intro)
